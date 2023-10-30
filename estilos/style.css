@@ -4,41 +4,23 @@
     font-family: 'Comic Neue', 'Raleway', sans-serif, 'Young Serif', serif;
 }
 
-header{
-    background-color: rgb(100, 81, 196);
-    height: 40px;
-    color: white;
-    padding: 20px;
+.navbar{
+    background-color: goldenrod ;
     font-size: 22px;
 }
 
-.logo{
-    float: left;
-    font-weight: bold;
+.nav-link{
+    color: black !important;
 }
 
-.logo span{
-    color: #000;
+.collapse{
+    display: flex;
+    justify-content: end;
 }
 
-.menu{
-    float: right;
-    padding: 0;
+.span{
+    color: black;
 }
-.menu ul li{
-    list-style: none;
-    display: inline-block;
-}
-
-.menu a{
-    text-decoration: none;
-    color: #000;
-}
-
-.menu a:hover{
-    color: blue;
-}
-
 
 .textarea{
     width: 300px;
