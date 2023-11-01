@@ -1,7 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@300&family=Playpen+Sans&family=Raleway:wght@300&family=Roboto:wght@300&family=Young+Serif&display=swap');
+
+/* font-family: 'Comic Neue', cursive;
+font-family: 'Playpen Sans', cursive;
+font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif;
+font-family: 'Young Serif', serif; */
+
 *{
     margin: 0;
     padding: 0;
-    font-family: 'Comic Neue', 'Raleway', sans-serif, 'Young Serif', serif;
+    box-sizing: border-box;
 }
 
 .navbar{
@@ -18,11 +26,32 @@
     height: 150px;
     resize: none;
 }
+
+.vista{
+    background-color: darkgrey;
+}
+
+.jumbotron{
+    background-image: url(../multimedia/fondo.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 200px;
+    padding-top: 15px;
+}
 .title{
     text-align: center;
-    margin-top: 25px;
-    font-size: 32px;
+    font-size: 40px;
     text-decoration: underline;
+    font-family: 'Young Serif', serif;
+    color: darkorange;
+    margin-top: 40px;
+}
+
+.jumbotron .subtit{
+    text-align: center;
+    font-family: 'Young Serif', serif;
+    color: darkorange;
+    margin-top: 15px;
 }
 
 .subtit{
@@ -31,7 +60,7 @@
 }
 
 .carousel{
-    width: 70%;
+    width: 80%;
     position: relative;
     display: flex;
     margin: auto;
@@ -42,13 +71,13 @@
 }
 
 .carousel-control-prev, .carousel-control-next{
-    background-color: gray;
+    background-color: darkgoldenrod;
 }
 
 
 .carousel-indicators button{
     background-color: #000;
-    border: solid #000 5px;
+    height: 20px;
 }
 
 .contenedor{
@@ -64,6 +93,11 @@
     background-size: cover;
     background-position: center;
 }
+
+/* .btn{
+    background: goldenrod;
+    border: solid #000 3px;
+} */
 
 .img1{
     background-image: url(../multimedia/ps5.jpg);
@@ -100,6 +134,7 @@
 
 .buscador{
     margin-left: 1300px;
+    margin-top: 23px;
 }
 .totalgasto{
     margin-left: 1300px;
