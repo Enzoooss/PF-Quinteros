@@ -25,10 +25,16 @@ font-family: 'Young Serif', serif; */
     width: 300px;
     height: 150px;
     resize: none;
+    margin-left: 10px;
 }
 
-.vista{
+main{
     background-color: darkgrey;
+}
+
+p{
+    margin-bottom: 0;
+    padding: 20px;
 }
 
 .jumbotron{
@@ -89,7 +95,7 @@ font-family: 'Young Serif', serif; */
 }
 
 .consolas{
-    border: #000 3px solid;
+    border: #000 2px solid;
     background-size: cover;
     background-position: center;
 }
@@ -115,7 +121,6 @@ font-family: 'Young Serif', serif; */
 
 .texto{
     color: black;
-    padding: 20px;
     background-color: goldenrod;
 }
 
@@ -147,11 +152,27 @@ font-family: 'Young Serif', serif; */
 .mapa{
     margin: 50px 500px;
 }
-#foo{
-    /* background-color: gray; */
-    position: absolute;
-    right: 0;
-    margin-right: 25px;
+
+footer{
+    background-color: #000;
+    color: #fff;
+    font-size: 30px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p{
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+footer a{
+    color: goldenrod;
+    font-size: 45px;
+}
+
+footer i{
+    letter-spacing: 25px;
 }
 
 @media only screen and (min-width:480px){
