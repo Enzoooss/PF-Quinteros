@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     font-family: 'Comic Neue', 'Raleway', sans-serif, 'Young Serif', serif;
-    box-sizing: border-box;
 }
 
 .navbar{
@@ -52,13 +51,38 @@
     border: solid #000 5px;
 }
 
-.consolas{
-    width: 300px;
+.contenedor{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 300px);
+    grid-gap: 1px;
+    margin-top: 3px;
 }
 
-.contenedor{
-    display: flex;
-    align-items: center;
+.consolas{
+    border: #000 3px solid;
+    background-size: cover;
+    background-position: center;
+}
+
+.img1{
+    background-image: url(../multimedia/ps5.jpg);
+}
+
+
+.img2{
+    background-image: url(../multimedia/xbox_series_xs.jpg);
+}
+
+
+.img3{
+    background-image: url(../multimedia/switch.webp);
+}
+
+.texto{
+    color: black;
+    padding: 20px;
+    background-color: goldenrod;
 }
 
 .nosotros{
@@ -93,4 +117,18 @@
     position: absolute;
     right: 0;
     margin-right: 25px;
+}
+
+@media only screen and (min-width:480px){
+    .contenedor{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .contenedor{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 300px);
+    }
 }
