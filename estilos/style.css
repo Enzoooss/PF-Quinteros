@@ -132,17 +132,54 @@ p{
     font-size: 17px;
 }
 
+.contenedor-prod{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(12, 300px);
+    grid-gap: 1px;
+    margin-top: 3px;
+}
+
 .productos{
-    width: 200px;
-    margin-left: 30px;
+    border: #000 2px solid;
+    background-size: cover;
+    background-position: center;
+}
+
+.img-p1{
+    background-image: url(../multimedia/joystick_ps5.jpg);
+}
+
+.img-p2{
+    background-image: url(../multimedia/joystick_xbox.jpg);
+}
+
+.img-p3{
+    background-image: url(../multimedia/joystick_switch.jpg);
+}
+
+.img-p4{
+    background-image: url(../multimedia/monitor.jpg);
+}
+
+.img-p5{
+    background-image: url(../multimedia/mouse.jpg);
+}
+
+.img-p6{
+    background-image: url(../multimedia/teclado.png);
 }
 
 .buscador{
-    margin-left: 1300px;
-    margin-top: 23px;
+    display: flex;
+    justify-content: right;
+    padding: 15px 30px;
 }
+
 .totalgasto{
-    margin-left: 1300px;
+    display: flex;
+    justify-content: right;
+    padding: 15px 30px;
 }
 
 .subrayado{
@@ -185,6 +222,27 @@ footer i{
 @media only screen and (min-width:768px){
     .contenedor{
         grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(3, 300px);
+    }
+}
+
+@media only screen and (min-width:480px){
+    .contenedor-prod{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+@media only screen and (min-width:768px){
+    .contenedor-prod{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(6, 300px);
+    }
+}
+
+@media only screen and (min-width:1024px){
+    .contenedor-prod{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
         grid-template-rows: repeat(3, 300px);
     }
 }
