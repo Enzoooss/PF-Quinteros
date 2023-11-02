@@ -182,12 +182,21 @@ p{
     padding: 15px 30px;
 }
 
-.subrayado{
-    text-decoration: underline;
+.dire-tel p{
+    font-size: 25px;
 }
 
 .mapa{
-    margin: 50px 500px;
+    display: flex;
+    justify-content: center;
+}
+
+.inputs{
+    padding: 20px;
+}
+
+.enviar{
+    margin-left: 10px;
 }
 
 footer{
