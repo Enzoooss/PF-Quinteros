@@ -182,22 +182,41 @@ p{
     padding: 15px 30px;
 }
 
-.dire-tel p{
+.title-contac{
+    text-align: center;
+    color: mediumvioletred;
+    text-decoration: underline;
+    margin-top: 20px;
+    padding-bottom: 40px;
+}
+
+
+.telefonos{
     font-size: 25px;
+    padding: 0;
+    padding-left: 20px;
 }
 
 .mapa{
     display: flex;
     justify-content: center;
+    padding-top: 40px;
+}
+
+.subtit-contac{
+    padding: 20px;
+    text-decoration: underline;
 }
 
 .inputs{
     padding: 20px;
+    text-align: center;
 }
 
 .enviar{
     margin-left: 10px;
 }
+
 
 footer{
     background-color: #000;
