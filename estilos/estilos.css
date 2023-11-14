@@ -213,7 +213,7 @@ h1 {
 
 .title-contac {
   text-align: center;
-  color: mediumvioletred;
+  color: black;
   text-decoration: underline;
   margin-top: 20px;
   padding-bottom: 40px;
@@ -234,6 +234,7 @@ h1 {
 .subtit-contac {
   padding: 20px;
   text-decoration: underline;
+  text-align: center;
 }
 
 .inputs {
