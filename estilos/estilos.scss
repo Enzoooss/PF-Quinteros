@@ -30,6 +30,11 @@ $fontsizetitle: 40px;
 header{
     background-color: $color2;
     font-size: $fontsizeheader;
+    h3{
+        font-size: 30px;
+        color: $color5;
+        span{color: $color4;}
+    }
 }
 
 // .navbar{
@@ -64,6 +69,8 @@ p{
     height: 200px;
     padding-top: 15px;
 }
+
+
 .title{
     text-align: center;
     font-size: $fontsizetitle;
@@ -71,6 +78,25 @@ p{
     font-family: 'Young Serif', serif;
     color: $color3;
     margin-top: 40px;
+    text-shadow: 0, 0;
+}
+
+
+h1 {
+    animation: moverVolvertitulo 1.5s ease-in-out; /* Aplica la animación */
+    animation-iteration-count: 1;
+}
+
+@keyframes moverVolvertitulo {
+    0% {
+        transform: translate(500px, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .jumbotron .subtit{
@@ -83,6 +109,20 @@ p{
 .subtit{
     padding: 20px;
     text-decoration: underline;
+    animation: moverVolverSubtit 1.7s ease-in-out; /* Aplica la animación */
+    animation-iteration-count: 1;
+}
+
+@keyframes moverVolverSubtit {
+    0% {
+        transform: translate(-500px, 0);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
+    }
 }
 
 .carousel{
@@ -120,10 +160,6 @@ p{
     background-position: center;
 }
 
-/* .btn{
-    background: goldenrod;
-    border: solid #000 3px;
-} */
 
 @for $i from 1 through 3{
     .consola#{$i} {
@@ -147,7 +183,6 @@ p{
 
 .contenedor-prod{
     display: grid;
-    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 300px);
     grid-gap: 1px;
@@ -156,7 +191,6 @@ p{
 
 .producto{
     border: $color4 2px solid;
-    background-size: 85%;
     background-size: cover;
     background-position: center;
 }
@@ -226,6 +260,8 @@ footer{
         p{
         font-size: 25px;
         margin-bottom: 20px;
+        animation: AparecerdeAbajo 1.3s ease-in-out; /* Aplica la animación */
+        animation-iteration-count: 1;
     }
         a{
         color: $color2;
@@ -233,6 +269,32 @@ footer{
     }
         i{
         letter-spacing: 25px;
+    }
+}
+
+.redes {
+    display: inline-block;
+}
+
+.logo {
+    display: inline-block;
+    background-size: cover;
+    transition: transform 0.3s ease;
+}
+
+.logo:hover {
+    transform: scale(1.5); 
+}
+
+@keyframes AparecerdeAbajo {
+    0% {
+        transform: translate(0, 500px);
+    }
+    50% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(0, 0);
     }
 }
 
