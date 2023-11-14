@@ -10,7 +10,7 @@ font-family: 'Young Serif', serif; */
   box-sizing: border-box;
 }
 
-.navbar {
+header {
   background-color: goldenrod;
   font-size: 22px;
 }
@@ -80,7 +80,7 @@ p {
 }
 
 .carousel-indicators button {
-  background-color: #000;
+  background-color: black;
   height: 20px;
 }
 
@@ -92,8 +92,8 @@ p {
   margin-top: 3px;
 }
 
-.consolas {
-  border: #000 2px solid;
+.consola {
+  border: black 2px solid;
   background-size: cover;
   background-position: center;
 }
@@ -102,16 +102,16 @@ p {
     background: goldenrod;
     border: solid #000 3px;
 } */
-.img1 {
-  background-image: url(../multimedia/ps5.jpg);
+.consola1 {
+  background-image: url(../multimedia/consola1.jpg);
 }
 
-.img2 {
-  background-image: url(../multimedia/xbox_series_xs.jpg);
+.consola2 {
+  background-image: url(../multimedia/consola2.jpg);
 }
 
-.img3 {
-  background-image: url(../multimedia/switch.webp);
+.consola3 {
+  background-image: url(../multimedia/consola3.jpg);
 }
 
 .texto {
@@ -129,40 +129,42 @@ p {
 
 .contenedor-prod {
   display: grid;
+  width: 100%;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(12, 300px);
   grid-gap: 1px;
   margin-top: 3px;
 }
 
-.productos {
-  border: #000 2px solid;
+.producto {
+  border: black 2px solid;
+  background-size: 85%;
   background-size: cover;
   background-position: center;
 }
 
-.img-p1 {
-  background-image: url(../multimedia/joystick_ps5.jpg);
+.producto1 {
+  background-image: url(../multimedia/producto1.jpg);
 }
 
-.img-p2 {
-  background-image: url(../multimedia/joystick_xbox.jpg);
+.producto2 {
+  background-image: url(../multimedia/producto2.jpg);
 }
 
-.img-p3 {
-  background-image: url(../multimedia/joystick_switch.jpg);
+.producto3 {
+  background-image: url(../multimedia/producto3.jpg);
 }
 
-.img-p4 {
-  background-image: url(../multimedia/monitor.jpg);
+.producto4 {
+  background-image: url(../multimedia/producto4.jpg);
 }
 
-.img-p5 {
-  background-image: url(../multimedia/mouse.jpg);
+.producto5 {
+  background-image: url(../multimedia/producto5.jpg);
 }
 
-.img-p6 {
-  background-image: url(../multimedia/teclado.png);
+.producto6 {
+  background-image: url(../multimedia/producto6.jpg);
 }
 
 .buscador {
@@ -212,23 +214,20 @@ p {
 }
 
 footer {
-  background-color: #000;
-  color: #fff;
+  background-color: black;
+  color: white;
   font-size: 30px;
   text-align: center;
   padding: 20px;
 }
-
 footer p {
   font-size: 25px;
   margin-bottom: 20px;
 }
-
 footer a {
   color: goldenrod;
   font-size: 45px;
 }
-
 footer i {
   letter-spacing: 25px;
 }
@@ -262,6 +261,4 @@ footer i {
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: repeat(3, 300px);
   }
-}
-
-/*# sourceMappingURL=estilos.css.map */
+}/*# sourceMappingURL=estilos.css.map */

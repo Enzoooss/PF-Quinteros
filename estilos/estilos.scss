@@ -6,16 +6,36 @@ font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif;
 font-family: 'Young Serif', serif; */
 
+// Colores que estoy usando
+
+$color1: darkgrey;
+$color2: goldenrod;
+$color3: darkorange;
+$color4: black;
+$color5: white;
+$color6: mediumvioletred;
+$color7: darkgoldenrod;
+
+// Tamaños de fuentes
+
+$fontsizeheader: 22px;
+$fontsizetitle: 40px;
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.navbar{
-    background-color: goldenrod ;
-    font-size: 22px;
+header{
+    background-color: $color2;
+    font-size: $fontsizeheader;
 }
+
+// .navbar{
+//     background-color: $color2;
+//     font-size: 22px;
+// }
 
 .nav-link{
     color: black !important;
@@ -29,7 +49,7 @@ font-family: 'Young Serif', serif; */
 }
 
 main{
-    background-color: darkgrey;
+    background-color: $color1;
 }
 
 p{
@@ -46,17 +66,17 @@ p{
 }
 .title{
     text-align: center;
-    font-size: 40px;
+    font-size: $fontsizetitle;
     text-decoration: underline;
     font-family: 'Young Serif', serif;
-    color: darkorange;
+    color: $color3;
     margin-top: 40px;
 }
 
 .jumbotron .subtit{
     text-align: center;
     font-family: 'Young Serif', serif;
-    color: darkorange;
+    color: $color3;
     margin-top: 15px;
 }
 
@@ -77,12 +97,12 @@ p{
 }
 
 .carousel-control-prev, .carousel-control-next{
-    background-color: darkgoldenrod;
+    background-color: $color7;
 }
 
 
 .carousel-indicators button{
-    background-color: #000;
+    background-color: $color4;
     height: 20px;
 }
 
@@ -94,8 +114,8 @@ p{
     margin-top: 3px;
 }
 
-.consolas{
-    border: #000 2px solid;
+.consola{
+    border: $color4 2px solid;
     background-size: cover;
     background-position: center;
 }
@@ -105,23 +125,16 @@ p{
     border: solid #000 3px;
 } */
 
-.img1{
-    background-image: url(../multimedia/ps5.jpg);
+@for $i from 1 through 3{
+    .consola#{$i} {
+        background-image: url(../multimedia/consola#{$i}.jpg);
+    }
 }
 
-
-.img2{
-    background-image: url(../multimedia/xbox_series_xs.jpg);
-}
-
-
-.img3{
-    background-image: url(../multimedia/switch.webp);
-}
 
 .texto{
-    color: black;
-    background-color: goldenrod;
+    color: $color4;
+    background-color: $color2;
 }
 
 .nosotros{
@@ -134,41 +147,27 @@ p{
 
 .contenedor-prod{
     display: grid;
+    width: 100%;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(12, 300px);
     grid-gap: 1px;
     margin-top: 3px;
 }
 
-.productos{
-    border: #000 2px solid;
+.producto{
+    border: $color4 2px solid;
+    background-size: 85%;
     background-size: cover;
     background-position: center;
 }
 
-.img-p1{
-    background-image: url(../multimedia/joystick_ps5.jpg);
+
+@for $i from 1 through 6{
+    .producto#{$i} {
+        background-image: url(../multimedia/producto#{$i}.jpg);
+    }
 }
 
-.img-p2{
-    background-image: url(../multimedia/joystick_xbox.jpg);
-}
-
-.img-p3{
-    background-image: url(../multimedia/joystick_switch.jpg);
-}
-
-.img-p4{
-    background-image: url(../multimedia/monitor.jpg);
-}
-
-.img-p5{
-    background-image: url(../multimedia/mouse.jpg);
-}
-
-.img-p6{
-    background-image: url(../multimedia/teclado.png);
-}
 
 .buscador{
     display: flex;
@@ -184,7 +183,7 @@ p{
 
 .title-contac{
     text-align: center;
-    color: mediumvioletred;
+    color: $color6;
     text-decoration: underline;
     margin-top: 20px;
     padding-bottom: 40px;
@@ -219,26 +218,37 @@ p{
 
 
 footer{
-    background-color: #000;
-    color: #fff;
+    background-color: $color4;
+    color: $color5;
     font-size: 30px;
     text-align: center;
     padding: 20px;
+        p{
+        font-size: 25px;
+        margin-bottom: 20px;
+    }
+        a{
+        color: $color2;
+        font-size: 45px;
+    }
+        i{
+        letter-spacing: 25px;
+    }
 }
 
-footer p{
-    font-size: 25px;
-    margin-bottom: 20px;
-}
+// footer p{
+//     font-size: 25px;
+//     margin-bottom: 20px;
+// }
 
-footer a{
-    color: goldenrod;
-    font-size: 45px;
-}
+// footer a{
+//     color: $color2;
+//     font-size: 45px;
+// }
 
-footer i{
-    letter-spacing: 25px;
-}
+// footer i{
+//     letter-spacing: 25px;
+// }
 
 @media only screen and (min-width:480px){
     .contenedor{
