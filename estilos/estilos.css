@@ -62,7 +62,7 @@ p {
 }
 
 h1 {
-  animation: moverVolvertitulo 1.5s ease-in-out; /* Aplica la animación */
+  animation: moverVolvertitulo 1.7s ease-in-out; /* Aplica la animación */
   animation-iteration-count: 1;
 }
 
@@ -71,7 +71,7 @@ h1 {
     transform: translate(500px, 0);
   }
   50% {
-    transform: translate(0, 0);
+    transform: translate(-500px, 0);
   }
   100% {
     transform: translate(0, 0);
@@ -87,7 +87,7 @@ h1 {
 .subtit {
   padding: 20px;
   text-decoration: underline;
-  animation: moverVolverSubtit 1.7s ease-in-out; /* Aplica la animación */
+  animation: moverVolverSubtit 1.9s ease-in-out; /* Aplica la animación */
   animation-iteration-count: 1;
 }
 
@@ -96,7 +96,7 @@ h1 {
     transform: translate(-500px, 0);
   }
   50% {
-    transform: translate(0, 0);
+    transform: translate(500px, 0);
   }
   100% {
     transform: translate(0, 0);
@@ -256,7 +256,7 @@ footer {
 footer p {
   font-size: 25px;
   margin-bottom: 20px;
-  animation: AparecerdeAbajo 1.3s ease-in-out; /* Aplica la animación */
+  animation: AparecerdeAbajo 2.5s ease-in-out; /* Aplica la animación */
   animation-iteration-count: 1;
 }
 footer a {
@@ -283,10 +283,16 @@ footer i {
 
 @keyframes AparecerdeAbajo {
   0% {
-    transform: translate(0, 500px);
+    transform: translate(0, 250px);
+  }
+  25% {
+    transform: translate(0, -30px);
   }
   50% {
-    transform: translate(0, 0);
+    transform: translate(0, 30px);
+  }
+  75% {
+    transform: translate(0, -30px);
   }
   100% {
     transform: translate(0, 0);
