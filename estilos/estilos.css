@@ -15,11 +15,11 @@ header {
   background-color: goldenrod;
   font-size: 22px;
 }
-header h3 {
+header h1 {
   font-size: 30px;
   color: white;
 }
-header h3 span {
+header h1 span {
   color: black;
 }
 
@@ -61,7 +61,7 @@ p {
   text-shadow: 0, 0;
 }
 
-h1 {
+h2 {
   animation: moverVolvertitulo 1.7s ease-in-out; /* Aplica la animación */
   animation-iteration-count: 1;
 }

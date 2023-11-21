@@ -29,7 +29,7 @@ $fontsizetitle: 40px;
 header{
     background-color: $color2;
     font-size: $fontsizeheader;
-    h3{
+    h1{
         font-size: 30px;
         color: $color5;
         span{color: $color4;}
@@ -81,7 +81,7 @@ p{
 }
 
 
-h1 {
+h2 {
     animation: moverVolvertitulo 1.7s ease-in-out; /* Aplica la animación */
     animation-iteration-count: 1;
 }
