@@ -146,10 +146,51 @@ h2 {
   background-position: center;
 }
 
+.consolas-texto {
+  color: black;
+  background-color: goldenrod;
+}
+.consolas-texto .title-consola {
+  padding: 12px;
+}
+.consolas-texto .stats-title {
+  font-size: 18px;
+  padding-left: 12px;
+  text-decoration: underline;
+}
+.consolas-texto .lista-consola {
+  font-size: 14px;
+}
+.consolas-texto .precio-compra-conso {
+  padding-left: 12px;
+}
+.consolas-texto .precio-compra-conso span {
+  font-size: 25px;
+}
+.consolas-texto .precio-compra-conso button {
+  border-radius: 7px;
+  background-color: darkgrey;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.consolas-texto .precio-compra-conso button:hover {
+  background-color: rgb(129, 128, 128);
+}
+
+@media (min-width: 410px) {
+  .lista-consola {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
 .button {
-  padding: 5px;
+  padding: 8px;
   margin-left: 10px;
   border: 2px solid;
+}
+
+button:hover {
+  background-color: rgb(129, 128, 128);
 }
 
 .consola1 {
@@ -164,13 +205,20 @@ h2 {
   background-image: url(../multimedia/consola3.jpg);
 }
 
-.texto {
-  color: black;
-  background-color: goldenrod;
+.text-quienes {
+  font-size: large;
 }
 
-.nosotros {
-  margin-top: 20px;
+.hacemos-title {
+  padding: 20px;
+  text-decoration: underline;
+}
+.hacemos-title h4 {
+  font-size: 22px;
+}
+
+.hacemos-text {
+  font-size: large;
 }
 
 .especi {
@@ -189,6 +237,38 @@ h2 {
   border: black 2px solid;
   background-size: cover;
   background-position: center;
+}
+
+.productos-texto {
+  color: black;
+  background-color: goldenrod;
+}
+.productos-texto .title-productos {
+  padding: 5px 12px;
+}
+.productos-texto .stats-title {
+  font-size: 18px;
+  padding-left: 12px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+}
+.productos-texto .lista-prod {
+  font-size: 14px;
+}
+.productos-texto .precio-compra-prod {
+  padding-left: 12px;
+}
+.productos-texto .precio-compra-prod span {
+  font-size: 20px;
+}
+.productos-texto .precio-compra-prod button {
+  border-radius: 7px;
+  background-color: darkgrey;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.productos-texto .precio-compra-prod button:hover {
+  background-color: rgb(129, 128, 128);
 }
 
 .producto1 {
@@ -220,11 +300,17 @@ h2 {
   justify-content: right;
   padding: 15px 30px;
 }
+.buscador label {
+  margin-right: 10px;
+}
 
 .totalgasto {
   display: flex;
   justify-content: right;
   padding: 15px 30px;
+}
+.totalgasto label {
+  margin-right: 10px;
 }
 
 .title-contac {

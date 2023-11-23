@@ -169,10 +169,55 @@ h2 {
     background-position: center;
 }
 
+.consolas-texto{
+    color: $color4;
+    background-color: $color2;
+    .title-consola{
+        padding: 12px;
+    }
+    .stats-title{
+        font-size: 18px;
+        padding-left: 12px;
+        text-decoration: underline;
+    }
+    .lista-consola{
+        font-size: 14px;
+    }
+    .precio-compra-conso{
+        padding-left: 12px;
+        span{
+            font-size: 25px;
+        }
+        button{
+            border-radius: 7px;
+            background-color: $color1;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            }
+            button:hover {
+                background-color: rgb(129, 128, 128);
+            }
+    }
+}
+
+
+
+@media (min-width:410px){
+    .lista-consola{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+
 .button{
-    padding: 5px;
+    padding: 8px;
     margin-left: 10px;
     border: 2px solid;
+}
+
+button:hover {
+    background-color: rgb(129, 128, 128);
 }
 
 @for $i from 1 through 3{
@@ -181,14 +226,21 @@ h2 {
     }
 }
 
-
-.texto{
-    color: $color4;
-    background-color: $color2;
+.text-quienes{
+    font-size: large;
 }
 
-.nosotros{
-    margin-top: 20px;
+
+.hacemos-title{
+    padding: 20px;
+    text-decoration: underline;
+    h4{
+        font-size: 22px;
+    } 
+}
+
+.hacemos-text{
+    font-size: large;
 }
 
 .especi{
@@ -209,6 +261,40 @@ h2 {
     background-position: center;
 }
 
+.productos-texto{
+    color: $color4;
+    background-color: $color2;
+    .title-productos{
+        padding: 5px 12px;
+    }
+    .stats-title{
+        font-size: 18px;
+        padding-left: 12px;
+        margin-bottom: 5px;
+        text-decoration: underline;
+        
+    }
+    .lista-prod{
+        font-size: 14px;
+    }
+    .precio-compra-prod{
+        padding-left: 12px;
+        span{
+            font-size: 20px;
+        }
+        button{
+            border-radius: 7px;
+            background-color: $color1;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            }
+            button:hover {
+                background-color: rgb(129, 128, 128);
+            }
+    }
+}
+
+
 
 @for $i from 1 through 6{
     .producto#{$i} {
@@ -221,12 +307,18 @@ h2 {
     display: flex;
     justify-content: right;
     padding: 15px 30px;
+    label{
+        margin-right: 10px;
+    }
 }
 
 .totalgasto{
     display: flex;
     justify-content: right;
     padding: 15px 30px;
+    label{
+        margin-right: 10px;
+    }
 }
 
 .title-contac{
