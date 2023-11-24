@@ -321,16 +321,37 @@ button:hover {
   padding-bottom: 40px;
 }
 
-.telefonos {
+.dire-tel {
+  text-align: center;
+}
+.dire-tel .comunicacion {
+  background-color: goldenrod;
+  border-radius: 25px;
+  text-align: center;
+  display: inline-block;
+}
+.dire-tel .comunicacion .telefonos-text {
   font-size: 25px;
   padding: 0;
   padding-left: 20px;
+}
+.dire-tel .comunicacion .direccion-text {
+  font-size: 25px;
 }
 
 .mapa {
   display: flex;
   justify-content: center;
   padding-top: 40px;
+}
+.mapa iframe {
+  height: 400px;
+  width: 600px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 0 10px rgb(0, 0, 0);
 }
 
 .subtit-contac {
@@ -343,13 +364,40 @@ button:hover {
   padding: 20px;
   text-align: center;
 }
-
-.enviar {
+.inputs label {
+  display: block;
+  margin-bottom: 5px;
+}
+.inputs textarea {
+  width: 40%;
+  padding: 8px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+.inputs .informe {
+  text-align: center;
+}
+.inputs .enviar {
   padding: 5px;
   margin-left: 10px;
   border: 2px solid;
+  background-color: goldenrod;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 5px;
+  transition: background-color 0.5s ease;
 }
 
+.enviar:hover {
+  background-color: darkgoldenrod;
+}
+
+@media screen and (max-width: 700px) {
+  .inputs textarea {
+    width: 60%; /* Mantener el 40% incluso en pantallas más pequeñas */
+  }
+}
 footer {
   background-color: black;
   color: white;
